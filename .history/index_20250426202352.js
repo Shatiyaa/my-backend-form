@@ -24,11 +24,6 @@ mongoose.connect("mongodb://127.0.0.1:27017/dboffice")
 // Routes
 app.use(routes);
 
-app.get('/', (req, res) => {
-  res.send('Backend Server is Running Successfully 🚀');
-});
-
-
 // Start server
 app.listen(8086, function(error) {
   if (error) {
